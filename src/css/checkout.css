@@ -1,0 +1,24 @@
+.payment__section {
+  display: flex;
+  flex-direction: column;
+}
+/*.payment__details {
+  flex: 0.8;
+}*/
+.payment {
+  margin: 100px;
+}
+.payment__section button {
+  padding: 8px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background: rgb(30, 144, 255);
+  border-radius: 10px;
+}
+.payment__section button:hover {
+  background: rgba(7, 7, 143, 0.514);
+}
+.payment__items {
+  text-align: center;
+  margin-top: 100px;
+}

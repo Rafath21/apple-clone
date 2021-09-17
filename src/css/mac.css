@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+body {
+  position: absolute;
+  width: 100vw;
+}
+.mac__container {
+  display: grid;
+  grid-gap: 30px;
+  background: #ffff;
+}
+.mac__section1 {
+  height: 100vh;
+  width: 100vw;
+  padding: 7rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mac__section1,
+.mac__section2,
+.mac__section3,
+.mac__section4,
+.mac__section5 {
+  max-width: 100%;
+}
+.mac__section1 > img {
+  position: absolute;
+  top: 25%;
+  right: 2%;
+}
+.mac__section2 {
+  background: #fafafa;
+  text-align: center;
+  padding: 20px;
+}
+.mac__section2__items {
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
+  grid-template-columns: repeat(3, 1fr);
+}
+.mac__section2__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 4rem;
+  font-size: 15px;
+  max-width: 100%;
+}
+.mac__section2__item > button {
+  margin-top: 1.5rem;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: noe;
+  background: dodgerblue;
+  color: white;
+  border: none;
+}
+.mac__addtobag :hover {
+  background: #86868b !important;
+}
+.mac__section2__item > p {
+  font-size: 15px;
+  color: #86868b;
+}
+.small-banner {
+  display: none;
+}
+.mac__section3 {
+  background: #fcdcbe;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.mac__section3__content > p {
+  font-size: 40px;
+  font-weight: bold;
+}
+.mac__section3__content > a {
+  margin-right: 5rem;
+  font-size: 20px;
+  color: rgb(30, 144, 255);
+}
+.mac__section4 {
+  display: flex;
+  flex-direction: row;
+  background: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  max-width: 100%;
+}
+.mac__section4 > img {
+  max-width: 100%;
+}
+.mac__section4__content > p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.mac__section4__content > a {
+  color: rgb(30, 144, 255);
+  font-size: 20px;
+}
+.mac__section5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+.mac__section__5a,
+.mac__section__5b {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.mac__section__5a > p,
+.mac__section__5b > p {
+  font-size: 40px;
+  font-weight: bold;
+}
+.mac__section__5a > button {
+  padding: 10px;
+  border: none;
+  background: rgb(30, 144, 255);
+  color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.mac__section__5a > button :hover {
+  background: darkblue;
+}
+.max__section__5b > span {
+  margin-top: 20px;
+}
+.mac__section__5b > a {
+  color: rgb(30, 144, 255);
+  margin-top: 20px;
+  font-size: 20px;
+}
+.mac__section__5a > img,
+.mac__section__5b > img {
+  margin-top: 40px;
+}
+@media screen and (max-width: 400px) {
+  .small-banner {
+    display: initial;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 5% !important;
+    margin: auto !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mac__section2__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .large-banner {
+    display: none;
+  }
+  .small-banner {
+    display: initial;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+  }
+
+  .mac__section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mac__section4 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .mac__section4 > img {
+    max-width: 100%;
+  }
+  .mac__section5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  img {
+    object-fit: contain;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  img {
+    object-fit: contain;
+    max-width: 100%;
+  }
+  .mac__section2__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .large-banner {
+    display: none;
+  }
+  .small-banner {
+    display: initial;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: -1%;
+    top: 5% !important;
+    margin: auto !important;
+  }
+  .mac__section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mac__section4 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .mac__section4 > img {
+    max-width: 100%;
+  }
+  .mac__section5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mac__section1 {
+    height: 40vh;
+  }
+}

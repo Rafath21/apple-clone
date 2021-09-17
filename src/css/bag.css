@@ -1,0 +1,47 @@
+.bag__items__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+}
+.bag__container {
+  text-align: center;
+}
+.bag__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.bag__item > button {
+  padding: 15px;
+  border: none;
+  color: whie;
+  color: white;
+  background: rgb(30, 144, 255);
+  border-radius: 10px;
+}
+.bag-item-btn:hover {
+  background: rgb(19, 19, 189);
+}
+hr {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+.bag__container > button,
+.ptc {
+  margin: 22px;
+  padding: 15px;
+  color: black;
+  border: none;
+  border-radius: 10px;
+}
+.ptc:hover {
+  background: grey;
+}
+@media screen and (max-width: 400px) {
+  .bag__item {
+    flex-direction: column;
+  }
+}

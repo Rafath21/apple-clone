@@ -1,0 +1,11 @@
+[-] add store items in firestore with all the details
+[-] create frontend components for store items
+[-] create cart page
+[-] implement the stripe functionality
+[+] Learn redux
+[-] implement the cart functionality
+[-] make navbar responsive
+[-] iphone first two images
+[-] home page responsive
+[+] Hosting and all of that
+[+] empty bag 

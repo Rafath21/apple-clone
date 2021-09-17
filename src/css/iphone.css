@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+body {
+  position: absolute;
+  width: 100vw;
+}
+img {
+  max-width: 100%;
+}
+.banner__container {
+  background: #fbfbfd;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner__subtitle,
+.banner__trade-in,
+.banner__buy-now,
+.banner__learn-more,
+.section1__title,
+.section1__subtitle,
+.section1__trade-in,
+.section1__buy-now,
+.section1__learn-more {
+  margin-top: 1%;
+}
+.banner__title,
+.section1__title {
+  margin-top: 3%;
+  font-size: 55px;
+}
+.banner__subtitle,
+.section1__subtitle {
+  font-size: 30px;
+}
+.banner__trade-in,
+.section1__trade-in {
+  font-size: 20px;
+  color: #808080;
+}
+.banner__learn-more,
+.banner__buy-now,
+.section1__buy-now,
+.section1__learn-more {
+  text-decoration: none;
+  font-size: 20px;
+  color: #1e90ff;
+}
+.section__1 {
+  background: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  color: #fafafa;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+.iphone__container__section2 {
+  margin-top: 100px;
+  padding: 10px;
+  width: 100vw;
+  text-align: center;
+}
+.iphone__container__section2__items {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
+  grid-template-columns: repeat(4, 1fr);
+}
+.iphone__container__section2__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 3rem;
+}
+.iphone__container__section2__item > button {
+  margin-top: 1.5rem;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: noe;
+  background: dodgerblue;
+  color: white;
+  border: none;
+}
+.iphone__container__section2__item > button:hover {
+  background: #86868b;
+}
+.iphone__container__section2__item > p {
+  font-size: 15px;
+  color: #86868b;
+}
+@media screen and (max-width: 500px) {
+  .iphone__container__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .iphone__container__section2__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  .iphone__container__section2__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,24 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
+import Navbar from './components/Navbar';
+import Home from "./components/Home";
+import Ipad from './components/Ipad';
+import Iphone from "./components/Iphone";
+import Mac from "./components/Mac";
+import Store from "./components/Store";
+import Appletv from "./components/Appletv";
+import Bag from "./components/Bag";
+import Register from "./components/Register";
+import Orders from "./components/Orders";
+import Login from "./components/Login";
+import AuthProvider from "./AuthProvider";
+import Checkout from "./components/Checkout"
+import {loadStripe} from "@stripe/stripe-js";
+import {Elements} from "@stripe/react-stripe-js";
+
+const promise=loadStripe("pk_test_51Ja1UGSFkqJZGOrfsOxNfWt7p6hlf0Ugfp50OLXBWRRcnJUimj4S7vWpc8laOqPeEs0pi4XZFvDnjsAD1PIx2D9d00r5KO6AV8");
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+ 
+      <Router>
+    <AuthProvider>
+
+          <Switch>
+           <Route path="/ipad">
+            <Ipad/>
+          </Route>
+          <Route path="/home">
+            <Home/>
+          </Route>
+          <Route path="/iphone">
+            <Iphone/>
+          </Route>
+         <Route path="/mac">
+            <Mac/>
+          </Route>
+          <Route path="/store">
+            <Store/>
+          </Route>
+          <Route path="/appletv">
+            <Appletv/>
+          </Route>
+          <Route path="/bag">
+            <Bag/>
+          </Route>
+           <Route path="/login">
+            <Login/>
+          </Route>
+          <Route path="/orders">
+            <Orders/>
+          </Route>
+           <Route path="/register">
+            <Register/>
+          </Route>
+          <Route path="/checkout">
+            <Elements stripe={promise}>
+            <Checkout/>
+            </Elements>
+          </Route>
+        </Switch>
+ </AuthProvider>
+
+ </Router>
+    </>
   );
 }
 

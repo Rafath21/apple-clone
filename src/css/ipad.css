@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+body {
+  /* overflow-x: hidden !important; */
+  /* overflow: auto; */
+  /* width: max-content; */
+}
+.ipad__container {
+  display: grid;
+  width: 100%;
+  margin-top: 8px;
+  overflow-x: hidden;
+}
+.title {
+  margin-top: 20px;
+}
+.ipad__container__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ffff;
+  position: relative;
+  margin: 20px;
+  min-height: 72vh;
+  /* width: 100vw; */
+}
+.ipad__container__section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 210px;
+  left: 5%;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.ipad__container__section > img {
+  position: absolute;
+  left: 30%;
+  top: 2%;
+  object-fit: contain;
+  max-width: 77%;
+}
+
+.ipad__container__section__content > h1 {
+  font-size: 3rem;
+}
+.ipad__container__section__content > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 19px;
+  position: absolute;
+  left: 1%;
+  top: 41%;
+}
+
+.ipad__container__section__content > span {
+  position: absolute;
+  top: 250%;
+  left: 1%;
+  color: rgb(128, 128, 128);
+}
+
+.ipad__container__section__content > a {
+  position: absolute;
+  top: 300%;
+  font-size: 1.6rem;
+  left: 1%;
+  color: dodgerblue;
+}
+.ipad__container__section2 {
+  margin-top: 212px;
+  padding: 10px;
+  width: 100vw;
+  text-align: center;
+}
+.ipad__container__section2__items {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ipad__container__section2__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 3rem;
+}
+.ipad__container__section2__item > button {
+  margin-top: 1.5rem;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+  border: noe;
+  background: dodgerblue;
+  color: white;
+  border: none;
+}
+.ipad__container__section2__item > button:hover {
+  background: #86868b;
+}
+.ipad__container__section2__item > p {
+  font-size: 15px;
+  color: #86868b;
+}
+
+@media screen and (max-width: 500px) {
+  .ipad__container__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ipad__container__section2__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .ipad__container__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 42vh;
+    /* margin: 10px; */
+  }
+  .ipad__container__section > img {
+    left: 10%;
+  }
+  .ipad__container__section__content {
+    top: 60%;
+    left: 20%;
+  }
+  .ipad__container__section__content > a {
+    position: absolute;
+    top: 338%;
+  }
+  .ipad__container__section2__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ipad__container__section {
+    min-height: 30vh;
+  }
+}

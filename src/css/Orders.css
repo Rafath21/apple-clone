@@ -1,0 +1,24 @@
+.orders__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  text-align: center;
+}
+.orders__container > h1 {
+  text-shadow: 1em;
+  text-decoration: underline;
+}
+.order__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .order__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
