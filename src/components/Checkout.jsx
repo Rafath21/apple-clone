@@ -18,7 +18,7 @@ let Checkout = () => {
   const [processing, setProcessing] = useState("");
   const [clientSecret, setClientSecret] = useState("");
   let [noOfItems, setnoOfItems] = useState(0);
-  let { bagItems, getBagTotal, dispatch } = useContext(bagContext);
+  let { bagItems, getBagTotal, dispatch, emptyBag } = useContext(bagContext);
   let value = useContext(AuthContext);
   let price = getBagTotal(bagItems);
 
@@ -65,6 +65,7 @@ let Checkout = () => {
           .add({
             orders: bagItems,
           });
+        emptyBag();
         history.replace("/orders");
       });
   };

@@ -60,8 +60,8 @@ let Register = () => {
                 alert("Invalid email address!");
                 return;
               }
-              if (currUserPswd.length < 10) {
-                alert("Please make a strong password");
+              if (currUserPswd.length < 6) {
+                alert("Password must have at least 6 characters");
                 return;
               }
               auth.createUserWithEmailAndPassword(currUserEmail, currUserPswd);

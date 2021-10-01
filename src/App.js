@@ -28,9 +28,6 @@ function App() {
            <Route path="/ipad">
             <Ipad/>
           </Route>
-          <Route path="/home">
-            <Home/>
-          </Route>
           <Route path="/iphone">
             <Iphone/>
           </Route>
@@ -59,6 +56,9 @@ function App() {
             <Elements stripe={promise}>
             <Checkout/>
             </Elements>
+          </Route>
+          <Route path="/">
+            <Home/>
           </Route>
         </Switch>
  </AuthProvider>

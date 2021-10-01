@@ -12,7 +12,7 @@ import bagContext from "../context/bag/bagContext";
 import ClearIcon from "@material-ui/icons/Clear";
 let Navbar = () => {
   let value = useContext(AuthContext);
-  let { bagItems } = useContext(bagContext);
+  let { bagItems, emptyBag } = useContext(bagContext);
   let [open, setOpen] = useState(false);
   let [count, setCount] = useState(0);
   useEffect(() => {
@@ -26,7 +26,7 @@ let Navbar = () => {
     <>
       <div class="navbar__container">
         <NavLink
-          to="/home"
+          to="/"
           activeStyle={{ color: "#ffffffc8" }}
           style={{ textDecoration: "none" }}
           className="text-link"
@@ -92,6 +92,7 @@ let Navbar = () => {
                   className="signout-btn"
                   onClick={() => {
                     auth.signOut();
+                    emptyBag();
                   }}
                 >
                   Sign Out
