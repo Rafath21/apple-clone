@@ -64,7 +64,14 @@ let Register = () => {
                 alert("Password must have at least 6 characters");
                 return;
               }
-              auth.createUserWithEmailAndPassword(currUserEmail, currUserPswd);
+              auth
+                .createUserWithEmailAndPassword(currUserEmail, currUserPswd)
+                .then((res) => {
+                  // console.log(res);
+                })
+                .catch((err) => {
+                  alert(err.message);
+                });
             }}
             type="submit"
             class="registerbtn"
