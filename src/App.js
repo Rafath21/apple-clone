@@ -14,7 +14,7 @@ import AuthProvider from "./AuthProvider";
 import Checkout from "./components/Checkout"
 import {loadStripe} from "@stripe/stripe-js";
 import {Elements} from "@stripe/react-stripe-js";
-
+import Payment from "./components/Payment";
 const promise=loadStripe("pk_test_51Ja1UGSFkqJZGOrfsOxNfWt7p6hlf0Ugfp50OLXBWRRcnJUimj4S7vWpc8laOqPeEs0pi4XZFvDnjsAD1PIx2D9d00r5KO6AV8");
 
 function App() {
@@ -52,9 +52,9 @@ function App() {
            <Route path="/register">
             <Register/>
           </Route>
-          <Route path="/checkout">
+          <Route path="/payment">
             <Elements stripe={promise}>
-            <Checkout/>
+           <Payment/>
             </Elements>
           </Route>
           <Route path="/">

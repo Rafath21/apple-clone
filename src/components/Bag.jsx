@@ -56,7 +56,7 @@ let Bag = () => {
         </span>
         <Link
           to={{
-            pathname: "/checkout",
+            pathname: "/payment",
           }}
           style={{ textDecoration: "none" }}
         >
