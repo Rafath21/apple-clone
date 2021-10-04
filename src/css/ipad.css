@@ -6,9 +6,7 @@
     "Arial", sans-serif;
 }
 body {
-  /* overflow-x: hidden !important; */
-  /* overflow: auto; */
-  /* width: max-content; */
+  overflow: auto; 
 }
 .ipad__container {
   display: grid;

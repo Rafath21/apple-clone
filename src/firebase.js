@@ -6,14 +6,16 @@ import "firebase/compat/auth";
 
 import "firebase/compat/storage";
 
+import {apiKey,authDomain,projectId,storageBucket,messagingSenderId,appId,measurementId} from "./secrets.js";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDYbrs6hrSHRLmpX9mVKa72iOuycZ1jcxE",
-  authDomain: "apple-clone-3ac22.firebaseapp.com",
-  projectId: "apple-clone-3ac22",
-  storageBucket: "apple-clone-3ac22.appspot.com",
-  messagingSenderId: "921508141111",
-  appId: "1:921508141111:web:0dba93d5d96d78136a87b2",
-  measurementId: "G-8GXVXKCGJT"
+  apiKey: apiKey,
+  authDomain: authDomain,
+  projectId: projectId,
+  storageBucket: storageBucket,
+  messagingSenderId: messagingSenderId,
+  appId: appId,
+  measurementId: measurementId
 }
 firebase.initializeApp(firebaseConfig);
 

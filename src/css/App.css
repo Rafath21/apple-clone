@@ -1,3 +1,6 @@
+body {
+  overflow: auto;
+}
 .register-form-container,
 .login-form-container {
   position: absolute;

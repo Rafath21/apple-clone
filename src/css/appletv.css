@@ -1,6 +1,7 @@
 body {
   width: 100vw;
   background: #fff;
+  overflow: auto;
 }
 .appletv__container {
   position: relative;
