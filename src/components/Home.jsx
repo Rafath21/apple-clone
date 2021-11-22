@@ -1,5 +1,7 @@
 import Navbar from "./Navbar";
 import "../css/Home.css";
+import { Link } from "react-router-dom";
+
 let Home = () => {
   return (
     <>
@@ -8,12 +10,22 @@ let Home = () => {
         <h1 class="banner__title">iPhone 12</h1>
         <p class="banner__subtitle">Blast past fast.</p>
         <p class="banner__trade-in">From 69900 before trade-in</p>
-        <a href="" class="banner__learn-more">
+        <Link
+          to="/iphone"
+          class="banner__learn-more"
+          style={{ textDecoration: "none" }}
+          id="link-tag"
+        >
           Learn more
-        </a>
-        <a href="" class="banner__buy-now">
+        </Link>
+        <Link
+          to="/iphone"
+          class="banner__buy-now"
+          style={{ textDecoration: "none" }}
+          id="link-tag"
+        >
           Buy now
-        </a>
+        </Link>
         <img
           className="imgClass"
           src="https://firebasestorage.googleapis.com/v0/b/apple-clone-3ac22.appspot.com/o/home%2Fbanner-img.jpg?alt=media&token=318b2457-da46-41bc-aa80-73c47b876e90"
@@ -23,12 +35,22 @@ let Home = () => {
         <h1 class="section1__title">iPhone 12 Pro</h1>
         <p class="section1__subtitle">It's a leap year</p>
         <p class="section1__trade-in">From 119900 before trade-in</p>
-        <a href="" class="section1__learn-more">
+        <Link
+          to="/iphone"
+          class="section1__learn-more"
+          style={{ textDecoration: "none" }}
+          id="link-tag"
+        >
           Learn more
-        </a>
-        <a href="" class="section1__buy-now">
+        </Link>
+        <Link
+          to="/store"
+          class="section1__buy-now"
+          style={{ textDecoration: "none" }}
+          id="link-tag"
+        >
           Buy now
-        </a>
+        </Link>
         <img
           className="imgClass"
           src="https://firebasestorage.googleapis.com/v0/b/apple-clone-3ac22.appspot.com/o/home%2Fsection-1.jpg?alt=media&token=f53cf8ca-311c-4dae-84cd-7ab9c91ecaff"
@@ -37,12 +59,22 @@ let Home = () => {
       <div class="section__2">
         <h1 class="section2__title">iPhone 12 Pro</h1>
         <p class="section2__subtitle">It's a leap year</p>
-        <a href="" class="section2__learn-more">
+        <Link
+          to="/store"
+          class="section2__learn-more"
+          style={{ textDecoration: "none" }}
+          id="link-tag"
+        >
           Learn more
-        </a>
-        <a href="" class="section2__buy-now">
+        </Link>
+        <Link
+          to="/store"
+          class="section2__buy-now"
+          style={{ textDecoration: "none" }}
+          id="link-tag"
+        >
           Buy now
-        </a>
+        </Link>
         <img
           className="imgClass"
           src="https://firebasestorage.googleapis.com/v0/b/apple-clone-3ac22.appspot.com/o/home%2Fsection-2.jpg?alt=media&token=3f2b6046-be3e-420a-a17a-16ab405fab10"
@@ -69,12 +101,22 @@ let Home = () => {
             The future of health is on your wrist.
           </p>
           <br />
-          <a href="" class="section__3b__learn-more">
+          <Link
+            to="/store"
+            class="section__3b__learn-more"
+            style={{ textDecoration: "none" }}
+            id="link-tag"
+          >
             Learn more
-          </a>
-          <a href="" class="section__3b__buy">
+          </Link>
+          <Link
+            to="/store"
+            class="section__3b__buy"
+            style={{ textDecoration: "none" }}
+            id="link-tag"
+          >
             Buy
-          </a>
+          </Link>
 
           <img
             className="imgClass"
@@ -86,12 +128,22 @@ let Home = () => {
         <div class="section__4a">
           <h1 class="section__4a__title">iMac</h1>
           <p class="section__4a__subtitle">Say hello.</p>
-          <a href="" class="section__4a__learn-more">
+          <Link
+            to="/mac"
+            class="section__4a__learn-more"
+            style={{ textDecoration: "none" }}
+            id="link-tag"
+          >
             Learn more
-          </a>
-          <a href="" class="section__4a__buy">
+          </Link>
+          <Link
+            to="/store"
+            class="section__4a__buy"
+            style={{ textDecoration: "none" }}
+            id="link-tag"
+          >
             Buy
-          </a>
+          </Link>
           <img
             className="imgClass"
             src="https://firebasestorage.googleapis.com/v0/b/apple-clone-3ac22.appspot.com/o/home%2Fsection4a.jpg?alt=media&token=1b2e5bfb-538d-412f-93fd-9101adb2e3a2"
@@ -102,12 +154,22 @@ let Home = () => {
           <p class="section__4b__subtitle">
             Lose your knack for losing things.
           </p>
-          <a href="" class="section__4b__learn-more">
+          <Link
+            to="/store"
+            class="section__4b__learn-more"
+            style={{ textDecoration: "none" }}
+            id="link-tag"
+          >
             Learn more
-          </a>
-          <a href="" class="section__4b__buy">
+          </Link>
+          <Link
+            to="/store"
+            class="section__4b__buy"
+            style={{ textDecoration: "none" }}
+            id="link-tag"
+          >
             Buy
-          </a>
+          </Link>
           <img
             className="imgClass"
             src="https://firebasestorage.googleapis.com/v0/b/apple-clone-3ac22.appspot.com/o/home%2Fsection4b.jpg?alt=media&token=2a25763f-a5b3-40ed-9861-4b11d35970c5"
@@ -118,9 +180,14 @@ let Home = () => {
         <div class="section__5a">
           <h1 class="section__5a__title">Music</h1>
           <p class="section__5a__subtitle">Introducing Spatial Audio</p>
-          <a href="" class="section__5a__listen-now">
+          <Link
+            to="/store"
+            class="section__5a__listen-now"
+            style={{ textDecoration: "none" }}
+            id="link-tag"
+          >
             Listen now
-          </a>
+          </Link>
           <img
             className="imgClass"
             src="https://firebasestorage.googleapis.com/v0/b/apple-clone-3ac22.appspot.com/o/home%2Fsection5a.jpg?alt=media&token=4e427f25-560d-4c34-8aff-fa67fe9a0d3e"
@@ -131,9 +198,14 @@ let Home = () => {
           <p class="section__5b__subtitle">
             Watch on 14 September at 10:30 PM IST
           </p>
-          <a href="" class="section__5a__learn-now">
+          <Link
+            to="/store"
+            class="section__5b__learn-now"
+            style={{ textDecoration: "none" }}
+            id="link-tag"
+          >
             Learn more
-          </a>
+          </Link>
           <img
             className="imgClass"
             src="https://firebasestorage.googleapis.com/v0/b/apple-clone-3ac22.appspot.com/o/home%2Fsection5b.jpg?alt=media&token=0916405f-e259-4c8b-b026-3c0a5da10a03"

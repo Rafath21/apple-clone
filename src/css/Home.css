@@ -8,7 +8,7 @@
 body {
   position: absolute;
   width: 100vw;
-  overflow:auto;
+  overflow: auto;
 }
 .imgClass {
   width: 100% !important;
@@ -174,14 +174,14 @@ body {
   color: rgb(255, 255, 255);
 }
 .section__5a > p,
-.section__5a > a {
+.section__5a__listen-now {
   position: absolute;
   top: 20%;
   left: 20%;
   color: white;
   font-size: 20px;
 }
-.section__5a > a {
+.section__5a__listen-now {
   top: 25%;
   left: 24%;
   text-decoration: none;
@@ -211,9 +211,11 @@ body {
   color: #ffffff;
   margin-top: 11px;
 }
-.section__3b > a,
-.section__4a > a,
-.section__4b > a {
+.section__3b__learn-more,
+.section__3b__buy,
+.section__4a__learn-more,
+.section__4b__learn-more,
+.section__4b__buy {
   font-size: 20px;
   color: rgb(31, 143, 255);
   text-decoration: none;
@@ -232,14 +234,14 @@ body {
   right: 15%;
 }
 .section__5b > p,
-.section__5b > a {
+.section__5b__learn-now {
   position: absolute;
   bottom: 15%;
   color: rgb(255, 255, 255);
   right: 12%;
   font-size: 20px;
 }
-.section__5b > a {
+.section__5b__learn-now {
   bottom: 8%;
   right: 20%;
   text-decoration: none;
@@ -247,7 +249,7 @@ body {
 }
 .section__4a > p,
 .section__4b > p,
-.seciton__5a > p {
+.section__5a__subtitle {
   font-size: 20px;
   color: rgb(0, 0, 0);
   margin-bottom: 15px;
@@ -299,7 +301,7 @@ body {
   .section__5a > img {
     margin-left: 0;
   }
-  .section__5b > p {
+  .section__5b__subtitle {
     position: absolute;
     bottom: 12%;
     right: 0%;

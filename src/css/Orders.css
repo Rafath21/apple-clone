@@ -7,7 +7,6 @@
 }
 .orders__container > h1 {
   text-shadow: 1em;
-  text-decoration: underline;
 }
 .order__item {
   display: flex;
